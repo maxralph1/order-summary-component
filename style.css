@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+    color: var(--desaturated-blue);
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.card {
+    background-color: white;
+    margin: 4em auto;
+    min-width: 265px;
+    max-width: 265px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.hero {
+    margin-bottom: 0.3em;
+}
+
+.hero .hero-img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.details {
+    padding: 0.25em 1.1em 0.5em;
+}
+
+.details .intro {
+    padding: 0 0.5em;
+}
+
+.details .intro .heading {
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 2.5;
+    color: var(--dark-blue);
+}
+
+.details .intro .description {
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.details .costing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 0.7rem;
+}
+
+.details .costing .music-icon {
+    width: 17.5%;
+}
+
+.details .costing .pricing {
+    margin-left: -2em;
+    line-height: 1.5;
+}
+
+.details .costing .pricing .plan {
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+/* .details .costing .pricing .price {
+    
+} */
+
+.details .costing .change {
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+
+.details .costing .change:hover {
+    text-decoration: none;
+}
+
+.details .cta {
+    font-size: 0.75rem;
+    margin-top: 1.5em;
+}
+
+.details .cta > * {
+    margin-bottom: 1.5em;
+    font-weight: 700;
+}
+
+.details .cta .proceed {
+    background-color: var(--bright-blue);
+    border-radius: 7px;
+    box-shadow: 1px 17.5px 10px var(--pale-blue);
+    padding-top: 1em;
+    padding-bottom: 1em;  
+}
+
+.details .cta .proceed:hover {
+    opacity: 0.7;
+}
+
+.details .cta .proceed a {
+    text-decoration: none;
+    color: var(--very-pale-blue);
+}
+
+.details .cta .cancel a {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+}
+
+.details .cta .cancel a:hover {
+    color: var(--dark-blue);
+}
+
+
+/* frontendmentor.io attribution */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media screen and (min-width: 375px) {
+    body {
+        background-image: url("./images/pattern-background-desktop.svg");
+    }
+}
+
+/* @media screen and (min-width: 1440px) {
+
+} */
